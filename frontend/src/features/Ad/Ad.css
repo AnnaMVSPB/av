@@ -1,0 +1,15 @@
+.card{
+    width: 250px;
+    height: 550px !important;
+}
+.card-image{
+    height: 50% !important;
+}
+img{
+    height: 100% !important;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

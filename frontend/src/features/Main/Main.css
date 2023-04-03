@@ -1,0 +1,10 @@
+.main{
+    background: url('https://play-lh.googleusercontent.com/EzwUEOmlUqeVKumuYzXvG4_iEr2ksHGJmDyjoA_ZxrYz6_52cKaK0whND9sG3i4w_w=w3840-h2160-rw') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
