@@ -40,13 +40,12 @@ extraReducers: (builder) => {
         state.error = action.error.message;
     })
     .addCase(verificationUser.fulfilled, (state, action) => {
-        console.log(action)
         state.user = action.payload;
      })
      .addCase(verificationUser.rejected, (state, action) => {
          state.error = action.error.message;
      })
-     .addCase(logoutUser.fulfilled, (state, action) => {
+     .addCase(logoutUser.fulfilled, (state) => {
         state.user = {};
      })
      .addCase(logoutUser.rejected, (state, action) => {

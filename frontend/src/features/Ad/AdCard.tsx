@@ -34,7 +34,7 @@ const dispatch = useAppDispatch();
         {upd && (
        <form>
           <input />
-          <button>изменить</button>
+          <button type="button">изменить</button>
        </form>
 )}
       </div>

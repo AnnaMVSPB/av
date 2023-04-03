@@ -8,7 +8,6 @@ import { add, logoutUser } from '../Auth/authSlice';
 function Navbar():JSX.Element {
   const dispatch = useAppDispatch();
   const { user } = useSelector((store:RootState) => store.auth);
-  console.log(user)
   return (
     <div>
   <nav>
@@ -17,13 +16,13 @@ function Navbar():JSX.Element {
   <ul id="nav-mobile" className="right hide-on-med-and-down">
     { 'id' in user ? (
 <>
-<li onClick={() => dispatch(add())}><h1>{user.name}</h1></li>
+<div onClick={() => dispatch(add())}><h1>{user.name}</h1></div>
 <li>
     <Link to="/ad">Товары</Link>
 </li>
         <li>
 
-<p onClick={() => dispatch(logoutUser())}>Выход</p>
+<div onClick={() => dispatch(logoutUser())}>Выход</div>
         </li>
 
 </>

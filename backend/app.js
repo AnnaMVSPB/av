@@ -22,7 +22,10 @@ app.use(cookieParser());
 app.use(session(sessionConfig));
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../frontend/build')));
 app.use(cors(corsOptions));
+
+app.get('*',(req,res)=>{res.sendFile(path.resolve('../frontend/build/index.html'))})
 
 const indexRoute = require('./routes/index.routes');
 

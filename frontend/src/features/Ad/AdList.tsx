@@ -5,7 +5,7 @@ import Form from '../Form/Form';
 import AdCard from './AdCard';
 
 function AdList():JSX.Element {
-const { adsArr} = useSelector((store:RootState) => store.ad);
+const { adsArr } = useSelector((store:RootState) => store.ad);
 
   return (
     <>
